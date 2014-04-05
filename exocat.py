@@ -42,6 +42,10 @@ plt.rcParams.update(params)
 
 def exocat(arg1, arg2):
 	"""PURPOSE: To load and view the exoplanets catalogs"""
+  from astropy.io import ascii
+  exoorg = '/Users/matt/AeroFS/data/exoplanets.csv'
+  data = ascii.read(exoorg, delimiter=',')
+  return data
 
 
 
